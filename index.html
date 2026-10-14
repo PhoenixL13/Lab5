@@ -1,56 +1,79 @@
 <!DOCTYPE html>
+
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Volunteer Form</title>
-  </head>
-  <body>
-    <h1>Volunteer Form</h1>
-    <!-- Updated action to HTTPS to prevent browser submission blocks -->
-    <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
-      <fieldset>
-        <legend>My Info</legend>
-          <label for="fname">First name: </label>
-          <input type="text" id="fname" name="first_name_field" style="width: 85%;">
-          <label for="lname">Last name:</label>
-          <input type="text" id="lname" name="last_name_field" style="width: 86%;">
-          <label for="phone">Phone:</label>
-          <input type="tel" id="phone" name="phone_field" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" style="width: 80%;">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email_field" style="width: 81%;">
-          <label>Gender:</label><br>
-          <input type="radio" id="male" name="gender" value="male">
-          <label for="male">Male</label>
-          <input type="radio" id="female" name="gender" value="female">
-          <label for="female">Female</label>
-          <label for="age">Age:</label><br>
-          <select id="age" name="age_field">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page Title</title>
+</head>
+<body>
+<h1> </h1>
+<h2>Volunteer Form</h2>
+<form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
+    <fieldset>
+        <legend>My Info </legend>
+
+
+        <label for="fname">First name: </label>
+        <input type="text" id="fname" name="first_name_field" style="width: 85%;">
+        <br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="last_name_field" style="width: 85%;">
+        <br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone_field" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" style="width: 89%;">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email_field" style="width: 89%;">
+        <br>
+
+
+        <label for="gender">Gender:</label><br>
+            <label for="male">Male:</label>
+            <input type="radio" id="male" name="gender_field" value="male">
+            <label for="female">Female:</label>
+            <input type="radio" id="female" name="gender_field" value="female"><br>
+        
+        <label for="age">Age:</label><br>
+            <select id="age" name="age_field">
             <option value="Under 18">Under 18</option>
             <option value="Over 18">Over 18</option>
-          </select>
-      </fieldset>
-      <fieldset>
+            </select>
+    </fieldset>
+    <fieldset>
         <legend>My Availability</legend>
+        <h3> </h3>
+
+
         <h4>Days Available:</h4>
-        <input type="checkbox" id="day1" name="available_field[]" value="Monday">
-        <label for="day1">Monday</label><br>
-        <input type="checkbox" id="day2" name="available_field[]" value="Tuesday">
-        <label for="day2">Tuesday</label><br>
-        <input type="checkbox" id="day3" name="available_field[]" value="Wednesday">
-        <label for="day3">Wednesday</label><br>
-        <input type="checkbox" id="day4" name="available_field[]" value="Thursday">
-        <label for="day4">Thursday</label><br>
-        <input type="checkbox" id="day5" name="available_field[]" value="Friday">
-        <label for="day5">Friday</label><br>
-        <input type="checkbox" id="day6" name="available_field[]" value="Saturday">
-        <label for="day6">Saturday</label><br>
+        <label for="day1">Monday</label>
+        <input type="checkbox" id="day1" name="available_field[]" value="Monday"><br>
+        <label for="day2">Tuesday</label>
+        <input type="checkbox" id="day2" name="available_field[]" value="Tuesday"><br>
+        <label for="day3">Wednesday</label>
+        <input type="checkbox" id="day3" name="available_field[]" value="Wednesday"><br>
+        <label for="day4">Thursday</label>
+        <input type="checkbox" id="day4" name="available_field[]" value="Thursday"><br>
+        <label for="day5">Friday</label>
+        <input type="checkbox" id="day5" name="available_field[]" value="Friday"><br>
+        <label for="day6">Saturday</label>
+        <input type="checkbox" id="day6" name="available_field[]" value="Saturday"><br>
+        
         <h4>Comments</h4>
-        <textarea id="comments" name="comments_field" rows="4" cols="50"></textarea>
-      </fieldset>
-      <br>
-      <input type="hidden" name="hidden_field" value="Phoenix Ling">
-      <input type="submit" value="Submit Query">
-    </form>
-  </body>
+        <textarea id="comments" name="comments_field" rows="4" cols="50"></textarea>    
+    </fieldset>
+    <br>
+    <input type="hidden" name="hidden_field" value="Phoenix Ling">
+
+
+    <input type="submit" value="Submit Query">
+
+
+
+
+</form>
+
+
+</body>
 </html>
